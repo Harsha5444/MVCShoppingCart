@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopping App</title>
+    <link href="~/Content/Style2.css" rel="stylesheet" />
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <a href="~/" class="logo">ShoppingApp</a>
+                <ul class="nav-links">
+                    <li><a href="~/Home/Index">Home</a></li>
+                    <li><a href="~/Products/Index">Products</a></li>
+                    <li><a href="~/Cart/Index">Cart</a></li>
+                    <li><a href="~/Account/Login">Login</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="content">
+        @RenderBody()
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; @DateTime.Now.Year ShoppingApp. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
