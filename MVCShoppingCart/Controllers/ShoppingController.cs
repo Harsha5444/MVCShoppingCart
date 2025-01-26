@@ -20,6 +20,10 @@ namespace MVCShoppingCart.Controllers
         {
             return View();
         }
+        public ActionResult Home()
+        {
+            return View();
+        }
         public ActionResult Index()
         {
             var products = _bll.GetProducts();
